@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <title>Pixel Art</title>
+    <link rel="stylesheet/less" type="text/css" href="./css/styles.less" />
+    <script src="//cdn.jsdelivr.net/npm/less@3.13"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Otomanopee+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div>
+        <label for="gridSizeState">Grid Size</label>
+        <select id="gridSizeState" class="form-control">
+          <option selected value="8">8x8</option>
+          <option value="12">12x12</option>
+          <option value="16">16x16</option>
+          <option value="32">32x32</option>
+          <input type="button" value="Submit" id="gridSizeBtn" />
+        </select>
+      </div>
+      <div id="notification" class="notificationShow">
+        <h3>
+          Be careful changing the grid size will lead to clear your canvas.
+        </h3>
+        <input type="button" value="Agree" id="changeGridAgree" />
+        <input type="button" value="Cancel" id="changeGridCancel" />
+      </div>
+
+      <h1>Pixel Art</h1>
+      <table class="tools-panel">
+        <tr>
+          <td style="background-color: red" class="color-element"></td>
+          <td style="background-color: darkmagenta" class="color-element"></td>
+          <td style="background-color: chartreuse" class="color-element"></td>
+          <td style="background-color: blue" class="color-element"></td>
+          <td style="background-color: yellow" class="color-element"></td>
+          <td style="background-color: orange" class="color-element"></td>
+          <td style="background-color: white" class="color-element"></td>
+          <td style="background-color: black" class="color-element"></td>
+          <td style="background-color: bisque" class="color-element"></td>
+          <td style="background-color: pink" class="color-element"></td>
+          <td style="background-color: burlywood" class="color-element"></td>
+        </tr>
+      </table>
+      <table id="canvas"></table>
+      <div class="download-options">
+        <input
+          checked="checked"
+          type="radio"
+          id="downloadTypeJPG"
+          name="downloadType"
+          value="JPG"
+        />
+        <label for="downloadTypeJPG">JPG</label><br />
+        <input
+          type="radio"
+          id="downloadTypePNG"
+          name="downloadType"
+          value="PNG"
+        />
+        <label for="downloadTypePNG">PNG</label><br />
+        <input type="button" value="Download" id="downloadBtn" />
+      </div>
+    </main>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
