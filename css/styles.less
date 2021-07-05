@@ -6,7 +6,6 @@
 }
 
 main {
-  font-family: "Open Sans", sans-serif;
   font-size: large;
   margin-top: 2rem;
   display: flex;
@@ -18,9 +17,17 @@ main {
     font-size: 2.5rem;
     font-family: "Otomanopee One", sans-serif;
   }
+  /*
+tools-panel: where the colors are.
+*/
+
   .tools-panel {
     width: 100%;
     max-width: 32rem;
+    /*
+color-element: the element for every color.
+*/
+
     .color-element {
       height: 2.5rem;
       width: 9%;
@@ -28,6 +35,10 @@ main {
       border: 1px solid black;
     }
   }
+
+  /*
+notificationShow: to show and hide the notification.
+*/
   .notificationShow {
     display: none;
   }
@@ -41,10 +52,13 @@ main {
     border-radius: 0.5rem;
     cursor: pointer;
   }
+  /*
+canvas: The class for the table where users can paint..
+*/
+
   #canvas {
     border-collapse: collapse;
     table-layout: fixed;
-
     max-width: 32rem;
     width: 100%;
 
