@@ -127,5 +127,6 @@ function createNewCanvas(gridSize) {
   }
 
   canvasPanel.innerHTML = canvasHtmlContent;
+  canvasIsClean = true;
 }
 
