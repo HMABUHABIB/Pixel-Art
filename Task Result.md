@@ -7,7 +7,7 @@ I use the following technologies / frameworks in my project:
 - JavaScript
 
 I chose JavaScript because most of my work before was done with it.
-Like (work, study, free-time) projects, And I have done many online courses for JavaScript, Node.js, and react.
+Like (work, study, free-time) projects, And I have done many online courses about JavaScript, Node.js, and react.
 
 ## Used 3rd Party Libraries
 
